@@ -1,0 +1,106 @@
+<!--Sort Task1 Desktop
+Carolina Pantoja
+CIS 128-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Short Task1:Desktop version</title>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8"/>
+
+<meta name= "viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="detectmobilebrowser.js"></script>
+
+
+<style>
+
+<!--Style -->
+
+h1{ 
+color: white; 
+padding: 20px;
+text-align:left;
+font-style: italic;
+}
+
+dl {
+color:white;
+padding: 20px;
+}
+
+p{
+color: white; 
+padding: 20px;
+text-align:left;
+font-size: 1.4em;
+}
+
+ol{
+color: white;
+font-size: 1.2em;
+}
+
+a{
+color:dark blue;
+background-color: lightgray;
+}
+
+body,html{
+height: 80%;
+margin:0;
+background-position:center;
+background-position:no-repeat;
+background-size: cover;
+padding:20px;
+}
+
+</style
+
+</head>
+
+<!--Add background image-->
+<body background="jacaranda.jpg">
+<h1 style="color:white;">Desktop Version</h1>
+<p>This is a desktop version of my web page!</p>
+
+<div>
+<p>Second paragraph choose three capabilities from WURFL database and explain those capabilities:
+<ol>
+	<dl>
+	<li><dt>complete_device_name</dt>
+		<dd>The name the device is known by. Typically make and model, a "group" of devices, or a more 
+			generic definition.</dd></li>
+	<li>	<dt>form_factor</dt>
+		<dd>May return any of these values:<b><span style="background-color:lightgray;  color:red "> Desktop, App, Tablet, Smartphone, Feature Phone, Smart-TV,
+			Robot, Other non-Mobile, other Mobile</span>.</b></dd></li>
+	<li><dt>is_mobile</dt>	
+		<dd>Returns <b><span style="background-color:lightgray; color:red">true</span> </b>if the device is a tables, or other mobile 
+		device, otherwise<b> <span style="background-color:lightgray; color:red">false</span></b></dd></li>
+	</dl>
+	</ol>
+	
+</p>
+</div>
+
+
+<p id="id1"></p>
+
+<script>
+if(jQuery.browser.mobile)
+{
+	$("#id1").text("You are using a mobile device:");
+}
+else
+{
+	$("#id1").text("You are not using a mobile device");
+}
+</script>
+
+<p> <a href="https://carop91.github.io/ShortTask1%20Mobile/mobile.html">Do you want to use the mobile version at </a></p>
+</body>
+
+</html>
