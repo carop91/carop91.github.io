@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--Homework3
+Carolina Pantoja
+CIS 128 -->
+
+<html>
+	
+<head>
+<!-- <meta charset="UTF-8" />-->
+
+	<title>ABC Toys</title>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+
+<!--script here to chat the mobileinit event-->
+	<script>
+		$document.bing("mobileint", function(evt){
+			alert("mobileinit fired");
+		//
+		$.mobile.defaultPageTransition="turn";
+		$.mobile.defaultDialogTransition="flip";
+		$.mobile.pageLoadErrorMessage="Error";
+		});
+		
+	</script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	
+</head>
+<body>
+  
+<section id="p1" data-role="page">
+<header data-role="header">
+<h1>ABC Toys</h1>
+</header>
+
+<div  data-role="content">
+<h3>Making learning fun</h3>  
+
+<p> ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+
+<p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
+<p>By the way, parents love our toys too</p>
+<p ><a href="#p2">Contact us</a></p>
+<p><a href="#p3">Product</a></p>
+<p><a href="#p4">Location</a></p>
+</div>
+
+    </section>
+	
+<!--This is page 2-->	
+<section id="p2" data-role="page">
+	<header data-role="header">
+	<h1 style="">ABC TOYS</h1>
+	</header>
+	<div data-role="content">
+	
+	<form method="get" action="#">
+		<fieldset class="ui-filed-contain">
+		<h2>Contact us</h2>
+		<p>If you have any questions or need help, please submit the form below.</p>
+		<p>We will respond within 24 hours, though in most cases faster.</p>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" value="" placeholder="Your Name"/>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" value="" placeholder="Your Email"/>
+			<label for="tel">Telephone:</label>
+			<input type="tel" name="tel" id="tel" value="" placeholder="Telephone"/>
+			<label for="datails">Comments</label>
+			<textarea id="details"></textarea>
+			<input type="submit" value="Submit">		
+		</fieldset>		
+		
+		<div class="ui-filed-contain">
+		<p style="color:red;">Email</p>
+		<p>toys@abctoys.com</p>
+		<p style="color:red;">Telephone</p>
+		<p> 510- 456- 4588</p>
+		<p> 1800- 859- 6544</p>
+		<p style="color:red;">Address</p>
+		<p>	ABC Toys</p>
+		<p> 2151 Stuart St  </p>
+		<p> Berkeley California 94705</p>
+		
+		<!--<i class="fa fa-facebook-square" style="font-size:48px;color:blue"></i>-->		
+		
+		<button style="font-size:20px;color:blue" type="button" onclick="
+		window.location.href='https://www.facebook.com/ABCToys.com';" value="facebook"><i class="fa fa-facebook-square"></i> ABCToys</button>		
+		</div>
+				
+	</form>
+	
+	<p><a href="#p1"> Homepage</a></p>	
+		
+	</div>
+</section>
+
+<!-- This is the third page -->
+<section id="p3" data-role="page">
+	<header data-role="header">
+		<div  data-role="content" >
+			<header data-role="header">
+			<h2>ABC Toys Products</h2>
+	  </header>
+	
+	<div data-role="content">
+		<div data-role="collapsible" data-theme="b" id="cnit" data-collapsible-icon="info">
+		<h3>Our toys</h3>
+		<p>Our vast toy selection at a low price and fast shipping.</p>
+		
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="c">
+			<h3>Outdoor Toys</h3>
+			<p>Best outdoor toys to keep kids entertained.</p>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Swing</h4>
+			<p>Outdoor Wed Swing great for Tree, Backyard,or Playground.</p>
+			<img src="swing.jpg" alt="Swing" width="175" height="175">
+			</div>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Inflatable Tubes</h4>
+			<p>Inflate and start rolling. Climb inside and move it along by walking foot over foot.</p>
+			<img src="tube.jpg" alt="Inflatable tube" width="175" height="175">
+			</div>
+			
+		</div>
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="c">
+			<h3>Learning Toys</h3>
+			<p>Learning toys that encourage logical thinking and creativity and promotes 
+			   imaginative play.</p>
+			   
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Stem Toys</h4>
+			<p>Steam Robotic Toys allows kids to learn STEM contem while working with 
+			   tools used by engineers.</p>
+			<img src="stem.jpg" alt="Steam" width="175" height="175">
+			</div>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Microscope for Kids</h4>
+			<p>Kids Beginner Microscope kit. Recommended for elementary and middle school aged kids.</p>
+			<img src="microscope.jpg" alt="Microscope" width="175" height="175">
+			</div>
+			
+		</div>
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="c">
+			<h3>Riding Toys</h3>
+			<p>Diverse selection of riding toys for kids</p>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Cars</h4>
+			<p>Ferrari Kart Pedal Powered Ride-On Racer Car</p>
+			<img src="ferrari.jpg" alt="Swing" width="175" height="175">
+			</div>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Kids Bikes</h4>
+			<p>Empower kids through cycling.</p>
+			<p>Style fame seature a front suspension fork for controlled riding
+			   provides 5 speeds and precise gear changes.</p>
+			<img src="bike.jpg" alt="Bike" width="175" height="175">
+			</div>
+		</div>
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="c">
+			<h3>Games and Puzzles</h3>
+			<p>Puzzles improved memory and games builds learning skills.</p>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Puzzle</h4>
+			<p>1000 Pieces jigpuzzle.</p>
+			<p>Finish size 26.75 x 19.75</p>
+			<img src="paris.jpg" alt="Paris Puzzle" width="175" height="175">
+			</div>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>HedBanz</h4>
+			<p>This fun game will have everyone guessing! Do yu best to figure out what is display 
+			   the card of the player's head.</p>
+			<img src="headbanz.jpg" alt="KidsHeadBanz" width="175" height="175">
+			</div>
+			
+		</div>
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="c">
+			<h3>Lego</h3>
+			<p>Lego toys promote fine motor skills and encourage team work</p>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Lego Architecture </h4>
+			<p>Celebrate a monumental blend of architecture and sculpture with this Lego
+			   Architecture The Statue of Liberty set.</p>
+			<img src="ny.jpg" alt="Statue of Liberty" width="175" height="175">
+			</div>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+			<h4>Roller Coaster</h4>
+			<p>Capture the speed, thrill and excitement of ultimate fairground attraction
+			   This model comes with two trains, a ticket booth, cotton candy cart and much 
+			   more.</p>
+			<img src="roller.jpg" alt="Roller Coaster" width="175" height="175">
+			</div>
+			
+		 </div>
+		</div>
+	  <p><a href="#p1"> Homepage</a></p>		
+	</div>
+	
+	
+</section>
+
+<!-- This is the fourth page -->
+<section id="p4" data-role="page">
+	<header data-role="header">
+		<h2>Location</h2>
+	</header>	
+		<div  data-role="content" >
+		<p>When we open our store, we will let you know our location here
+		   even with direction from your place to it!!!</p>
+		</div>
+			
+			
+	
+	
+ <p><a href="#p1"> Homepage</a></p>
+</body>
+
+</html>
